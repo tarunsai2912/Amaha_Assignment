@@ -42,7 +42,6 @@ const createTask = async (req, res) => {
       selectedPriority,
       checklist,
       category,
-      // assignTo: assignee ? assignee._id : null,
       assignTo: assignTo,
       dueDate: formattedDueDate,
       creator: ownerId,
@@ -423,7 +422,6 @@ const AnalyticsController = async (req, res) => {
             },
           },
           dueDates: { $sum: { $cond: [{ $eq: ["$dueDate", null] }, 0, 1] } },
-          // dueDates: { $push: "$dueDate" }
         },
       },
     ]);

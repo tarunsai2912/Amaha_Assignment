@@ -42,15 +42,6 @@ const Register = async (req, res) => {
     const savedUser = await user.save();
 
     const userWithPopulatedData = await User_Model.findById(savedUser._id);
-    // .populate({
-    //   path: "tasks",
-    // })
-
-    // const payload = { userId: savedUser._id.toString() };
-    // const token = jwt.sign(payload, process.env.JWT_SECRET_KEY, {
-    //   expiresIn: "8h",
-    // });
-
     return res.status(200).json({
       message: "Registered Successfully",
       error: "",
