@@ -1,0 +1,217 @@
+.login_register_container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.l_r_left {
+  width: 60vw;
+  height: 100vh;
+  background-color: rgba(23, 162, 184, 1);
+  -webkit-backdrop-filter: blur(33.08px);
+  backdrop-filter: blur(33.08px);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.l_r_left_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.l_r_center_circle {
+  width: 30vh;
+  height: 30vh;
+  background-color: rgba(49, 127, 139, 0.5);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.l_r_left_center img {
+  position: relative;
+  top: 6vh;
+  width: 25.5vh;
+  height: 30vh;
+}
+
+.l_r_center_text {
+  margin-top: -15vh;
+  text-align: center;
+}
+.l_r_center_text h2 {
+  font-weight: 600;
+  font-size: 3.2vh;
+  color: rgba(255, 255, 255, 1);
+}
+.l_r_center_text h4 {
+  font-weight: 500;
+  font-size: 1.8vh;
+  line-height: 1vh;
+  color: rgba(255, 255, 255, 1);
+}
+
+.l_r_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 40vw;
+  height: 100vh;
+  gap: 4vh;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.l_r_r_b1 {
+  background-color: rgba(23, 162, 184, 1);
+  height: 4.5vh;
+  border: none;
+  border-radius: 10vh;
+  color: rgba(255, 255, 255, 1);
+  width: 23vw;
+  font-size: 1.8vh;
+}
+
+.l_r_r_b2 {
+  background-color: rgba(255, 255, 255, 1);
+  height: 4.5vh;
+  border: 0.1vh solid rgba(23, 162, 184, 1);
+  border-radius: 10vh;
+  color: rgba(23, 162, 184, 1);
+  width: 23vw;
+  font-size: 1.8vh;
+}
+
+.l_r_right_buttons div {
+  line-height: 8vh;
+  text-align: center;
+  font-size: 1.8vh;
+  color: rgba(130, 130, 130, 1);
+}
+
+.l_r_right_heading {
+  font-weight: 600;
+  font-size: 3vh;
+  line-height: 1vh;
+  height: 5vh;
+
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+
+  color: rgba(52, 52, 52, 1);
+}
+/* FORM CSS */
+
+.form_container {
+  display: flex;
+  height: 30vh;
+  justify-content: center;
+  gap: 2vh;
+  flex-direction: column;
+}
+.form_name {
+  padding: 1.1vh;
+  width: 23vw;
+  padding-left: 5vh;
+  background: url("../../Assets/Name.png") no-repeat 1.5vh center;
+  background-size: 1.8vh 2vh;
+  border: 0.2vh solid rgba(208, 208, 208, 1);
+  border-radius: 0.8vh;
+
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.form_email {
+  padding: 1.1vh;
+  width: 23vw;
+  padding-left: 5vh;
+  background: url("../../Assets/Email.png") no-repeat 1vh center;
+  background-size: 2.5vh 2.5vh;
+  border: 0.2vh solid rgba(208, 208, 208, 1);
+  border-radius: 0.8vh;
+
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.form_password {
+  padding: 1.1vh;
+  width: 23vw;
+  padding-left: 5vh;
+  background: url("../../Assets/Password.png") no-repeat 1vh center;
+  background-size: 2.5vh 2.5vh;
+  border: 0.2vh solid rgba(208, 208, 208, 1);
+  border-radius: 0.8vh;
+
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.form_email:focus {
+  border-color: rgb(97, 97, 97);
+  outline: none;
+}
+
+.form_name:focus {
+  border-color: rgb(94, 94, 94);
+  outline: none;
+}
+.form_password:focus {
+  border-color: rgb(123, 123, 123);
+  outline: none;
+}
+.form_name::placeholder {
+  font-size: 2vh;
+}
+.form_email::placeholder {
+  font-size: 2vh;
+}
+.form_password::placeholder {
+  font-size: 2vh;
+}
+
+.display_error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0vh;
+  bottom: -1vh;
+  width: 100%;
+
+  text-align: center;
+}
+
+.error {
+  border: 1px solid red;
+  outline: none;
+}
+
+.display_error {
+  color: red;
+  font-size: 0.7em;
+}
+
+.register_show_pass {
+  position: absolute;
+  width: 3.5vh;
+  right: 1vh;
+  top: 0.6vh;
+}
+.register_show_pass:hover {
+  cursor: pointer;
+}

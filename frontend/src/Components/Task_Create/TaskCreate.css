@@ -1,0 +1,458 @@
+.task_create_container {
+  height: 66vh;
+  width: 80vh;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 4vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 2vh;
+}
+.task_c_title {
+  padding-bottom: 2vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.task_c_title label,
+.task_c_priority_left,
+.task_c_assign label,
+.task_c_checklist,
+.task_c_add_checklist {
+  font-weight: 500;
+  font-size: 2vh;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.task_c_title_input {
+  padding-top: 1.1vh;
+  padding-bottom: 1.1vh;
+  width: 100%;
+  padding-left: 1vh;
+  background-size: 2.5vh 2.5vh;
+  border: 0.2vh solid rgba(208, 208, 208, 1);
+  border-radius: 0.8vh;
+
+  font-weight: 500;
+  font-size: 1.8vh;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.task_c_title_input::placeholder {
+  font-size: 1.7vh;
+  padding-left: 1vh;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.task_c_title_input:focus {
+  border-color: rgb(97, 97, 97);
+  outline: none;
+}
+.task_c_priority {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2vh;
+  align-items: center;
+}
+
+.task_c_priority_right {
+  display: flex;
+  justify-content: space-between;
+  gap: 1vh;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.8vh;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: rgba(118, 117, 117, 1);
+  text-align: center;
+}
+
+.task_c_priority_right_item1,
+.task_c_priority_right_item3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(255, 255, 255);
+  height: 4.2vh;
+  border: 0.1vh solid rgba(226, 226, 226, 1);
+  border-radius: 1.3vh;
+  color: rgba(112, 112, 112, 1);
+  width: 17vh;
+  font-size: 1.8vh;
+  cursor: pointer;
+}
+.task_c_priority_right_item2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(255, 255, 255);
+  height: 4.2vh;
+  border: 0.1vh solid rgba(226, 226, 226, 1);
+  border-radius: 1.3vh;
+  color: rgba(112, 112, 112, 1);
+  width: 22vh;
+  font-size: 1.8vh;
+  cursor: pointer;
+}
+.task_c_priority_right_item1:hover,
+.task_c_priority_right_item2:hover,
+.task_c_priority_right_item3:hover {
+  background-color: rgba(238, 236, 236, 1);
+}
+.task_c_priority_right span {
+  width: 1vh;
+  height: 1vh;
+  background-color: #e32;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 1vh;
+  text-align: center;
+}
+
+.task_c_display_assigns {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2vh;
+
+  padding-bottom: 2vh;
+  width: 100%;
+
+  background-size: 2.5vh 2.5vh;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.task_c_display_assigns::-webkit-scrollbar {
+  display: none;
+}
+
+.task_c_display_assigns_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex: 0 0 auto;
+
+  background-color: rgb(255, 255, 255);
+  height: 3.8vh;
+  border: 0.1vh solid rgba(226, 226, 226, 1);
+  border-radius: 1.3vh;
+  color: rgba(112, 112, 112, 1);
+  width: 13vh;
+  min-width: 13vh;
+  font-size: 1.5vh;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.task_c_display_assigns_item:hover {
+  /* background-color: rgba(207, 54, 54, 1); */
+  color: rgba(207, 54, 54, 1);
+  border: 0.1vh solid rgba(207, 54, 54, 1);
+}
+
+.s2 {
+  display: none;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+
+  font-weight: 600;
+  font-size: 2vh;
+}
+
+.task_c_display_assigns_item:hover .s1 {
+  display: none;
+}
+
+.task_c_display_assigns_item:hover .s2 {
+  display: inline;
+}
+
+.task_c_assign {
+  padding-bottom: 2vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.task_c_checklist {
+  padding-bottom: 2vh;
+}
+.task_c_checklist_container {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  width: 100%;
+  max-height: 20vh;
+  background-color: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* background-color: aqua; */
+}
+
+.task_c_checklist_item {
+  /* width: 100%;
+    height: 5vh;
+    background-color: transparent;
+    border: 0.1vh solid  rgba(226, 226, 226, 1);
+    border-radius: 1.8vh;
+    display: flex;
+    gap: 1.3vh;
+    align-items: center; */
+
+  width: 98%;
+  /* height: 4.9vh; */
+  background-color: transparent;
+  border: 0.1vh solid rgba(226, 226, 226, 1);
+  border-radius: 1.3vh;
+  display: flex;
+  gap: 1.3vh;
+  align-items: center;
+  min-height: 4.9vh;
+}
+
+.task_c_checklist_container::-webkit-scrollbar-button {
+  display: none;
+}
+
+.task_c_checklist_container::-webkit-scrollbar {
+  width: 1.5vh;
+  height: 1.5vh;
+}
+
+.task_c_checklist_container::-webkit-scrollbar-track {
+  background: white;
+}
+
+.task_c_checklist_container::-webkit-scrollbar-thumb {
+  background-color: rgb(171, 211, 232);
+
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.checklist_checkbox {
+  margin-left: 2vh;
+}
+
+.checklist_checkbox {
+  width: 2.3vh;
+  height: 2.3vh;
+  border-radius: 0.6vh;
+  background-color: white;
+  border: 0.3vh solid rgba(226, 226, 226, 1);
+  appearance: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.checklist_checkbox:checked {
+  background-color: rgba(23, 162, 184, 1);
+  border-color: rgba(23, 162, 184, 1);
+}
+
+.checklist_checkbox:checked::before {
+  content: "✔";
+  display: block;
+  font-size: 2vh;
+  color: white;
+  text-align: center;
+  line-height: 2vh;
+}
+
+.checklist_input {
+  border: none;
+  width: 84.5%;
+  border-radius: 1.8vh;
+  font-weight: 500;
+  height: 85%;
+  font-size: 1.8vh;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: rgba(118, 117, 117, 1);
+}
+
+.checklist_delete_img {
+  width: 2vh;
+  height: 2.5vh;
+}
+
+.checklist_delete_img:hover {
+  cursor: pointer;
+}
+.checklist_input:focus {
+  border-color: rgb(94, 94, 94);
+  outline: none;
+}
+
+.task_c_add_checklist {
+  display: flex;
+  align-items: center;
+  gap: 1.5vh;
+  padding-bottom: 0.8vh;
+  padding-top: 0.8vh;
+  width: 16vh;
+  margin-top: 0.7vh;
+  justify-content: center;
+  border: 0.1vh solid rgb(255, 255, 255);
+  border-radius: 1.5vh;
+}
+.task_c_add_checklist:hover {
+  background-color: rgb(238, 236, 236);
+  border: 0.1vh solid rgba(226, 226, 226, 1);
+  cursor: pointer;
+}
+.task_c_add_checklist img {
+  width: 2vh;
+  height: 2vh;
+}
+
+.task_c_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task_c_footer_left {
+  display: flex;
+  gap: 2.5vh;
+  align-items: center;
+}
+.task_c_f_l_btn1 {
+  background-color: rgb(255, 255, 255);
+  height: 4.5vh;
+  border: 0.1vh solid rgba(226, 226, 226, 1);
+  border-radius: 1.3vh;
+  color: rgba(112, 112, 112, 1);
+  width: 21vh;
+  font-size: 1.8vh;
+  cursor: pointer;
+
+  font-weight: 600;
+
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.task_c_footer_right {
+  display: flex;
+  gap: 2.5vh;
+  align-items: center;
+}
+.task_c_f_r_btn1 {
+  background-color: rgb(255, 255, 255);
+  height: 4.5vh;
+  border: 0.1vh solid rgba(207, 54, 54, 1);
+  border-radius: 1.3vh;
+  color: rgba(207, 54, 54, 1);
+  width: 17vh;
+  font-size: 1.8vh;
+  cursor: pointer;
+
+  font-weight: 600;
+  font-size: 2vh;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.task_c_f_r_btn2 {
+  background-color: rgba(23, 162, 184, 1);
+  height: 4.5vh;
+  border: none;
+  border-radius: 1.3vh;
+  color: rgba(255, 255, 255, 1);
+  width: 17vh;
+  font-size: 1.8vh;
+  cursor: pointer;
+
+  font-weight: 600;
+  font-size: 2vh;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.task_c_title label:after {
+  color: #e32;
+  content: " *";
+  display: inline;
+}
+
+.task_c_priority_left:after {
+  color: #e32;
+  content: " *";
+  display: inline;
+}
+.task_c_checklist:after {
+  color: #e32;
+  content: " *";
+  display: inline;
+}
+
+.date-input {
+  width: 100%;
+  border: none;
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.react-datepicker__month-container {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: rgba(112, 112, 112, 1);
+}
+
+.react-datepicker-popper {
+  z-index: 1;
+  line-height: 0;
+  margin-left: 4vh;
+}
+.react-datepicker__input-container input {
+  width: 100%;
+  font-weight: 600;
+  font-size: 2vh;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: rgba(112, 112, 112, 1);
+}
+
+.date-input:focus {
+  outline: none;
+}

@@ -1,0 +1,98 @@
+.addpeople_container {
+  width: 68vh;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 2.5vh;
+  padding: 4vh;
+  display: flex;
+  flex-direction: column;
+  /* gap: 2vh; */
+  justify-content: space-between;
+}
+
+.add_people_heading {
+  margin-bottom: 2vh;
+  color: rgb(79, 79, 79);
+  font-size: 2.2vh;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.addpeople_btns {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.9vh;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.addpeople_left {
+  background-color: rgb(255, 255, 255);
+  height: 4.5vh;
+  border: 0.1vh solid rgba(207, 54, 54, 1);
+  border-radius: 1.3vh;
+  color: rgba(207, 54, 54, 1);
+  width: 48%;
+  font-size: 1.8vh;
+  cursor: pointer;
+
+  font-weight: 600;
+  font-size: 2vh;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.addpeople_right {
+  background-color: rgba(23, 162, 184, 1);
+  height: 4.5vh;
+  border: none;
+  border-radius: 1.3vh;
+  color: rgba(255, 255, 255, 1);
+  width: 48%;
+  font-size: 1.8vh;
+  cursor: pointer;
+
+  font-weight: 600;
+  font-size: 2vh;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.people_box {
+  display: flex;
+  overflow-x: auto;
+  max-width: 50vh;
+  /* background-color: blue; */
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.people_box::-webkit-scrollbar {
+  display: none;
+}
+
+.add_people_heading {
+  flex: 0 0 auto;
+  margin-right: 1vh;
+  white-space: nowrap;
+  color: rgb(79, 79, 79);
+}
+
+.people_container span {
+  margin-bottom: 2vh;
+  color: rgb(79, 79, 79);
+  font-size: 2.2vh;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}

@@ -1,0 +1,80 @@
+
+.loader8 {
+    position: relative;
+    width: 6vh;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dot {
+    position: absolute;
+    width: 1vh;
+    height: 1vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    animation: dotSpin 1.5s linear infinite;
+  }
+  
+  .dot:nth-child(1) {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .dot:nth-child(2) {
+    top: 14%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .dot:nth-child(3) {
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .dot:nth-child(4) {
+    top: 85%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .dot:nth-child(5) {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .dot:nth-child(6) {
+    top: 85%;
+    left: 14%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .dot:nth-child(7) {
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .dot:nth-child(8) {
+    top: 14%;
+    left: 14%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  @keyframes dotSpin {
+    0% {
+      transform: scale(0.8);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(0.8);
+    }
+  }
+  
