@@ -1,6 +1,6 @@
-# 📝 **Task Manager** - Simplify Your Workflow
+# 📝 **Kanban Board** - Simplify Your Workflow
 
-**Task Manager** is a powerful, intuitive tool designed to help you organize, prioritize, and track your tasks effectively. With features for assigning, prioritizing, and personalizing tasks, Task Manager makes team collaboration and productivity smoother than ever.
+**Kanban Board** is a powerful, intuitive tool designed to help you organize, prioritize, and track your tasks effectively. With features for assigning, prioritizing, and personalizing tasks, Kanban Board makes team collaboration and productivity smoother than ever.
 
 ## [Live Demo](https://amaha-assignment.vercel.app/)
 
