@@ -2,15 +2,12 @@
 
 **Task Manager** is a powerful, intuitive tool designed to help you organize, prioritize, and track your tasks effectively. With features for assigning, prioritizing, and personalizing tasks, Task Manager makes team collaboration and productivity smoother than ever.
 
-## [Live Demo](https://taskmanager-topaz.vercel.app/)
+## [Live Demo](https://amaha-assignment.vercel.app/)
 
 ## 🖼️ **Interface Previews**
 
-![Task List Screenshot](./frontend//src//Assets//readme1.png)
+![Task List Screenshot](./frontend//src//Assets//amaha_pic.jpg)
 *A clean and organized view of all tasks*
-
-![Task Anlytics Screenshot](./frontend/src//Assets/readm2.png)
-*Detailed view of task priority, checklist, and customization options*
 
 ---
 
@@ -42,7 +39,7 @@
 ## 🚀 **Getting Started**
 
 ## Setup Instructions
-1. 🌀 Clone the repository from [GitHub Repository URL](https://github.com/Vicky8180/vyadav99x1_gmail.com_cuvette_final_evaluation_feb_3).
+1. 🌀 Clone the repository from [GitHub Repository URL](https://github.com/tarunsai2912/Amaha_Assignment).
 2. 📁 Navigate to the project directory.
 3. ⚙️ Install dependencies by running `npm install`.
 4. 🚀 Start the development server by running `npm start`.
@@ -65,4 +62,4 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 - Open source contributors who have provided valuable resources and libraries.
 
 ## Contact
-For any inquiries or further information about the project, please contact Anoop Yadav at [Email](vyadav99x1@gmail.com).
+For any inquiries or further information about the project, please contact Anoop Yadav at [Email](tarunsairayapureddi@gmail.com).

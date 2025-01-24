@@ -14,7 +14,7 @@ const generateSharableUrl = async (req, res) => {
       }
       const existingUrl = await Share_Url_Model.findOne({ taskId });
       if (existingUrl) {
-        const url = `https://taskmanager-topaz.vercel.app/api/task/share/${existingUrl.urlId}`;
+        const url = `https://amaha-assignment.vercel.app/api/task/share/${existingUrl.urlId}`;
         return res
           .status(200)
           .json({
@@ -34,7 +34,7 @@ const generateSharableUrl = async (req, res) => {
           .json({ message: "Error in Generating URL", error: "", data: "" });
       }
   
-      const url = `https://taskmanager-topaz.vercel.app/api/task/share/${uniqueId}`;
+      const url = `https://amaha-assignment.vercel.app/api/task/share/${uniqueId}`;
       return res
         .status(200)
         .json({

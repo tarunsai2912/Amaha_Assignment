@@ -11,7 +11,6 @@ const Task_Schema = new mongoose.Schema(
     selectedPriority: { 
       type: String, 
       required: true, 
-      // enum: ['High', 'Medium', 'Low'], 
       trim: true 
     },
     assignTo: [
